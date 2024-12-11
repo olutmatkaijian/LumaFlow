@@ -4,6 +4,8 @@ It’s an open-source flowsheet editor in its early stages, designed to let you 
 
 It's a tool, not a product. It's not polished. 
 
+Note that I mainly develop on my own gitea instance and will only sporadically update this on github until I get a minimum viable product working. Then I'll migrate to github entirely. 
+
 ## Features (Working on them...)
 
 - **Drag-and-Drop Interface**: Build systems with the ease you deserve. 
