@@ -1,0 +1,165 @@
+/* Import Carbon Design System styles */
+@import 'carbon-components/css/carbon-components.min.css';
+
+:root {
+  /* Carbon color tokens */
+  --cds-text-01: #161616;
+  --cds-text-02: #525252;
+  --cds-text-03: #a8a8a8;
+  --cds-text-04: #ffffff;
+  --cds-text-05: #6f6f6f;
+  --cds-text-error: #da1e28;
+  
+  /* Background colors */
+  --cds-ui-background: #ffffff;
+  --cds-ui-01: #f4f4f4;
+  --cds-ui-02: #ffffff;
+  --cds-ui-03: #e0e0e0;
+  --cds-ui-04: #8d8d8d;
+  --cds-ui-05: #161616;
+  
+  /* Primary colors */
+  --cds-interactive-01: #0f62fe;
+  --cds-interactive-02: #393939;
+  --cds-interactive-03: #0f62fe;
+  --cds-interactive-04: #0f62fe;
+  
+  /* Secondary colors */
+  --cds-inverse-01: #ffffff;
+  --cds-inverse-02: #393939;
+  
+  /* Support colors */
+  --cds-support-01: #da1e28; /* Error */
+  --cds-support-02: #24a148; /* Success */
+  --cds-support-03: #f1c21b; /* Warning */
+  --cds-support-04: #0043ce; /* Information */
+  
+  /* Focus colors */
+  --cds-focus: #0f62fe;
+  
+  /* Border colors */
+  --cds-border-subtle-00: #e0e0e0;
+  --cds-border-subtle-01: #f4f4f4;
+  --cds-border-subtle-selected-01: #0f62fe;
+  
+  /* Spacing tokens */
+  --cds-spacing-01: 0.125rem;
+  --cds-spacing-02: 0.25rem;
+  --cds-spacing-03: 0.5rem;
+  --cds-spacing-04: 0.75rem;
+  --cds-spacing-05: 1rem;
+  --cds-spacing-06: 1.5rem;
+  --cds-spacing-07: 2rem;
+  --cds-spacing-08: 2.5rem;
+  --cds-spacing-09: 3rem;
+  
+  /* Layout tokens */
+  --cds-layout-01: 1rem;
+  --cds-layout-02: 1.5rem;
+  --cds-layout-03: 2rem;
+  --cds-layout-04: 3rem;
+  --cds-layout-05: 4rem;
+  --cds-layout-06: 6rem;
+  --cds-layout-07: 10rem;
+  
+  /* Container tokens */
+  --cds-container-01: 1.5rem;
+  --cds-container-02: 2rem;
+  --cds-container-03: 2.5rem;
+  --cds-container-04: 3rem;
+  --cds-container-05: 4rem;
+}
+
+/* Base styles */
+body {
+  background-color: var(--cds-ui-background);
+  color: var(--cds-text-01);
+  font-family: 'IBM Plex Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Dark theme */
+[data-theme="dark"] {
+  --cds-ui-background: #161616;
+  --cds-ui-01: #262626;
+  --cds-ui-02: #393939;
+  --cds-ui-03: #525252;
+  --cds-ui-04: #8d8d8d;
+  --cds-ui-05: #f4f4f4;
+  
+  --cds-text-01: #f4f4f4;
+  --cds-text-02: #c6c6c6;
+  --cds-text-03: #6f6f6f;
+  --cds-text-04: #ffffff;
+  --cds-text-05: #8d8d8d;
+  
+  --cds-interactive-01: #0f62fe;
+  --cds-interactive-02: #6f6f6f;
+  --cds-interactive-03: #ffffff;
+  --cds-interactive-04: #4589ff;
+  
+  --cds-border-subtle-00: #393939;
+  --cds-border-subtle-01: #262626;
+}
+
+/* Utility classes */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Focus styles */
+:focus {
+  outline: 2px solid var(--cds-focus);
+  outline-offset: 2px;
+}
+
+/* Transitions */
+.cds--transition {
+  transition: all 110ms cubic-bezier(0.2, 0, 0.38, 0.9);
+}
+
+/* Layout helpers */
+.cds--grid {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+/* Typography scale */
+.cds--type-body-long-01 {
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.16px;
+}
+
+.cds--type-body-long-02 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.cds--type-heading-01 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.29;
+  letter-spacing: 0.16px;
+}
+
+.cds--type-heading-02 {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.38;
+  letter-spacing: 0;
+}
+

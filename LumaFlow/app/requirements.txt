@@ -1,0 +1,10 @@
+Flask
+Flask-SocketIO
+Flask-SQLAlchemy
+Flask-Migrate
+python-dotenv
+Flask-Cors
+Flask-Login
+gunicorn
+gevent
+gevent-websocket

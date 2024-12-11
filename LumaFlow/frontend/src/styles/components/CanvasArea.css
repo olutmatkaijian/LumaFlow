@@ -1,0 +1,61 @@
+/* Make a nice grid onto canvas area */
+.graph-container {
+  width: 100%;
+  height: 100%;
+  background-color: var(--cds-ui-01);
+}
+
+/* Styles for graph elements */
+.graph-node {
+  fill: var(--cds-ui-02);
+  stroke: var(--cds-border-strong-01);
+  stroke-width: 1px;
+}
+
+.graph-node:hover {
+  fill: var(--cds-hover-ui);
+}
+
+.graph-node.selected {
+  stroke: var(--cds-focus);
+  stroke-width: 2px;
+}
+
+.graph-edge {
+  stroke: var(--cds-text-02);
+  stroke-width: 1px;
+}
+
+.graph-edge:hover {
+  stroke: var(--cds-interactive-01);
+  stroke-width: 2px;
+}
+
+/* Styles for graph labels */
+.graph-label {
+  font-size: var(--cds-label-01);
+  fill: var(--cds-text-01);
+}
+
+/* Styles for graph controls */
+.graph-controls {
+  position: absolute;
+  top: var(--cds-spacing-05);
+  right: var(--cds-spacing-05);
+  display: flex;
+  gap: var(--cds-spacing-03);
+}
+
+.graph-control-button {
+  background-color: var(--cds-ui-02);
+  border: 1px solid var(--cds-border-subtle-01);
+  color: var(--cds-text-01);
+  padding: var(--cds-spacing-03);
+  cursor: pointer;
+  transition: all 110ms var(--cds-standard-easing);
+}
+
+.graph-control-button:hover {
+  background-color: var(--cds-hover-ui);
+}
+

@@ -1,0 +1,35 @@
+.left-sidebar {
+  width: 250px;
+  background-color: #0043ce;
+  border-right: 1px solid var(--cds-border-subtle-01);
+  overflow-y: auto;
+  color: white;
+}
+
+.sidebar-header {
+  padding: var(--cds-spacing-05);
+  border-bottom: 1px solid var(--cds-border-subtle-01);
+}
+
+.sidebar-header h2 {
+  font-size: var(--cds-heading-02);
+  font-weight: 600;
+  color: white;
+}
+
+.svg-elements {
+  padding: var(--cds-spacing-03);
+}
+
+.cds--accordion__item {
+  border-top: 1px solid var(--cds-border-subtle-01);
+}
+
+.cds--accordion__heading {
+  color: var(--cds-text-02);
+}
+
+.cds--accordion__content {
+  padding: var(--cds-spacing-05);
+}
+
