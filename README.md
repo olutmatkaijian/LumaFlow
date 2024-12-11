@@ -25,6 +25,21 @@ It's a tool, not a product. It's not polished.
 ## Installation (For the Brave)
 
 LumaFlow is a work in progress. Don’t expect a smooth ride, but if you’re into it, you’re in the right place.
+In app/ folder: 
+``python3.12 -m venv venv`` followed by ``source venv/bin/activate``
+
+``pip install -r requirements.txt`` and ``flask run --debug`` (For collaborative features, gunicorn should be used!!!)
+
+Initialize database with ``python reset_database.py`` - This should create a user database
+
+Initial User: ``admin`` with password ``adminpassword`` **NOTE**: Due to CORS, can be impossible to log on (I should get that fixed...). 
+
+In new terminal, in frontend/ folder:
+``npm install``
+``npm run dev``
+Due to a lack of optimization it's pretty sluggish, over at http://localhost:5137
+
+If there's any error messages it's either CORS, or missing some dependency - in the latter case just install them with npm. 
 
 ### Prerequisites
 
@@ -32,14 +47,6 @@ LumaFlow is a work in progress. Don’t expect a smooth ride, but if you’re in
 2. Node.js and npm (for frontend dependencies)
 3. Docker (for containerized script execution)
 4. PostgreSQL or MySQL (for SQL database)
-
-### Steps
-
-You should be able to figure this out. 
-
-Hint: "npm install" and "npm run dev" in frontend/. 
-Hint: Make a venv, and "pip install -r requirements.txt"
-Hint: "Flask run --debug" in LumaFlow directory (above app/). 
 
 ## License
 
@@ -62,7 +69,8 @@ This is a non-political meritocracy.
 - [ ] Start working on more domain libraries. 
 - [ ] Get real-time collaboration working, if that makes sense. 
 - [ ] Interface is ugly. 
-- [ ] Build features that make sense. 
+- [ ] Build features that make sense.
+- [ ] Get CORS to work - it worked before, but why not now?! 
 
 ## Acknowledgements
 
@@ -78,7 +86,7 @@ Here’s what this is using:
 
 ---
 
-LumaFlow is about doing it your way. And right now, it’s only for the ones who want to work on a broken system. If you want to help, go ahead. If not, don’t waste your time.
+Right now, LumaFlow is only for the ones who want to work on a broken system. If you want to help, go ahead. If not, don’t waste your time.
 
 ---
 
