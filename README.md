@@ -1,6 +1,7 @@
 # LumaFlow
 LumaFlow: A tool for the disillusioned few who want to tinker with broken systems, slap together prototypes, and pretend they’re building something revolutionary, all while staying one step away from corporate control.
 It’s an open-source flowsheet editor in its early stages, designed to let you prototype, test, and break systems. The defining features: Attaching scripts to nodes. Yeah. That's about it. 
+Kind of like what I tried to build two years ago, ADAM, but better. 
 
 It's a tool, not a product. It's not polished. 
 
